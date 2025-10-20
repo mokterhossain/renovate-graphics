@@ -1,4 +1,4 @@
-import { Service } from "@/types";
+import { Service } from "../types";
 import ServiceCard from "./ServiceCard";
 
 const services: Service[] = [
