@@ -1,9 +1,10 @@
 'use client';
-import { Service } from "@/types";
+
 import BeforeAfterSlider from "./BeforeAfterSlider";
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 import Button from "./Button";
+import { Service } from "../types";
 
 interface ServiceCardProps {
   service: Service;
