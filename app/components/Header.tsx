@@ -45,17 +45,17 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm">
-      <div className="container mx-auto px-4 sm:px-6 flex items-center justify-between h-16 sm:h-[72px]">
+      <div className=" mx-auto px-4 sm:px-6 flex items-center justify-between h-16 sm:h-[72px]">
         {/* Logo + Nav */}
-        <div className="flex items-center gap-6 sm:gap-10">
+        <div className="flex items-center gap-6 sm:gap-30">
           <Link href="/" className="flex items-center">
             <Image
               src="/images/renovate-logo-3.png"
               alt="Renovate Logo"
-              width={180}
-              height={40}
+              width={220}
+              height={60}
               priority
-              className="h-8 sm:h-10 w-auto"
+              className=" "
             />
           </Link>
           <nav className="hidden lg:flex items-center gap-6 text-[15px] font-semibold text-gray-800">

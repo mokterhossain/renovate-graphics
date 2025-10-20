@@ -28,8 +28,8 @@ export default function HeroSlider() {
   }, []);
 
   return (
-    <section className="relative w-full overflow-hidden">
-      <div className="relative w-full max-w-[1340px] aspect-[7/2] min-h-[200px] max-h-[450px] mx-auto mt-20 sm:mt-20 md:mt-20 lg:mt-20 rounded-lg shadow-md overflow-hidden">
+    <section className="relative w-full overflow-hidden px-2 sm:px-4 lg:px-3 xl:px-5">
+      <div className="relative w-full aspect-[7/2] min-h-[200px] max-h-[450px] mx-auto mt-20 sm:mt-20 md:mt-20 lg:mt-20 rounded-lg shadow-md overflow-hidden">
         {slides.map((slide, i) => (
           <div
             key={slide.id}
