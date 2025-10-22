@@ -3,37 +3,30 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
-const slides = [
-  { id: 1, image: "/images/slider/web/slide1.jpg", mobileImage: "/images/slider/mobile/slide1.jpg" },
-  { id: 2, image: "/images/slider/web/slide2.jpg", mobileImage: "/images/slider/mobile/slide2.jpg" },
-  { id: 3, image: "/images/slider/web/slide3.jpg", mobileImage: "/images/slider/mobile/slide3.jpg" },
-  { id: 4, image: "/images/slider/web/slide4.jpg", mobileImage: "/images/slider/mobile/slide4.jpg" },
-  { id: 5, image: "/images/slider/web/slide5.jpg", mobileImage: "/images/slider/mobile/slide5.jpg" },
-  { id: 6, image: "/images/slider/web/slide6.jpg", mobileImage: "/images/slider/mobile/slide6.jpg" },
-  { id: 7, image: "/images/slider/web/slide7.jpg", mobileImage: "/images/slider/mobile/slide7.jpg" },
-  { id: 8, image: "/images/slider/web/slide8.jpg", mobileImage: "/images/slider/mobile/slide8.jpg" },
-  { id: 9, image: "/images/slider/web/slide9.jpg", mobileImage: "/images/slider/mobile/slide9.jpg" },
-  { id: 10, image: "/images/slider/web/slide10.jpg", mobileImage: "/images/slider/mobile/slide10.jpg" },
-  { id: 11, image: "/images/slider/web/slide11.jpg", mobileImage: "/images/slider/mobile/slide11.jpg" },
-];
+// Define the shape of a slide object for TypeScript (optional but recommended)
+interface Slide {
+  id: number;
+  image: string;
+  mobileImage?: string; // Optional, in case some slides don't have a mobile image
+}
 
-export default function HeroSlider() {
+// Define the props for the HeroSlider component
+interface HeroSliderProps {
+  slides: Slide[];
+}
+
+export default function HeroSlider({ slides }: HeroSliderProps) {
   const [index, setIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
   // Detect screen size on mount and resize
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Adjust threshold as needed (768px for tablets/mobile)
+      setIsMobile(window.innerWidth <= 768); // Adjust threshold as needed
     };
 
-    // Initial check
     handleResize();
-
-    // Add resize event listener
     window.addEventListener("resize", handleResize);
-
-    // Cleanup listener on unmount
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -42,7 +35,7 @@ export default function HeroSlider() {
       setIndex((prev) => (prev + 1) % slides.length);
     }, 10000);
     return () => clearInterval(timer);
-  }, []);
+  }, [slides.length]); // Add slides.length as dependency to handle dynamic slide arrays
 
   return (
     <section className="relative w-full overflow-hidden px-2 sm:px-4 lg:px-3 xl:px-5">
