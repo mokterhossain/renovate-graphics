@@ -1,10 +1,15 @@
-"use client";
+"use server";
 
 import Image from "next/image";
 import Link from "next/link";
 import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone } from "lucide-react";
 
-export default function Footer() {
+async function getCurrentYear() {
+  'use cache'
+  return new Date().getFullYear()
+}
+
+export default async function Footer() {
   return (
     <footer className="bg-[#0E0E0E] text-gray-300 pt-16 pb-6">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-gray-700 pb-10">
@@ -84,7 +89,7 @@ export default function Footer() {
 
       {/* Copyright Bar */}
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 mt-6">
-        <p>© {new Date().getFullYear()} Renovate Graphics. All rights reserved.</p>
+        <p>© {await getCurrentYear()} Renovate Graphics. All rights reserved.</p>
         <p>Designed with ❤️ by Renovate Graphics</p>
       </div>
     </footer>
