@@ -7,10 +7,10 @@ interface ServiceCardProps {
 
 const ServicePageCard: React.FC<ServiceCardProps> = ({ service }) => {
   return (
-    <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col gap-8">
+    <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col gap-3">
       <div className="flex-1">
-        <p className="text-indigo-600 font-semibold mb-4">Starting at {service.price}</p>
-        <p className="text-gray-600 mb-6 text-base leading-relaxed">{service.description}</p>
+        <p className="text-indigo-600 font-semibold mb-4">{service.title}</p>
+        <p className="text-gray-600 mb-0 text-base leading-relaxed">{service.description}</p>
       </div>
       <div className="flex-1">
         <BeforeAfterImageSlider
