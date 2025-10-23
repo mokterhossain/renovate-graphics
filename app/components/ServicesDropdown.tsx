@@ -15,18 +15,66 @@ interface ServicesDropdownProps {
 }
 
 const services: ServiceItem[] = [
-  { title: "Portrait Retouching", image: "/images/services/portrait.jpg", href: "/services/portrait-retouching" },
-  { title: "Body Retouching", image: "/images/services/body.jpg", href: "/services/body-retouching" },
-  { title: "Newborn Photo Editing", image: "/images/services/newborn.jpg", href: "/services/newborn-editing" },
-  { title: "High End Retouching", image: "/images/services/highend.jpg", href: "/services/high-end-retouching" },
-  { title: "Wedding Photo Editing", image: "/images/services/wedding.jpg", href: "/services/wedding-editing" },
-  { title: "Clipping Path", image: "/images/services/clipping.jpg", href: "/services/clipping-path" },
-  { title: "Photo Manipulation", image: "/images/services/manipulation.jpg", href: "/services/photo-manipulation" },
-  { title: "Photo Restoration", image: "/images/services/restoration.jpg", href: "/services/photo-restoration" },
-  { title: "Product Photo Editing", image: "/images/services/product.jpg", href: "/services/product-editing" },
-  { title: "Jewellery Photo Editing", image: "/images/services/jewellery.jpg", href: "/services/jewellery-editing" },
-  { title: "Real Estate Photo Editing", image: "/images/services/realestate.jpg", href: "/services/real-estate-editing" },
-  { title: "Video Editing Services", image: "/images/services/video.jpg", href: "/services/video-editing" },
+  {
+    title: "Clipping Path Editing",
+    image: "/images/services/clipping.jpg",
+    href: "/services/clipping-path",
+  },
+  {
+    title: "E-commerce Photo Editing",
+    image: "/images/services/product.jpg",
+    href: "/services/product-editing",
+  },
+  {
+    title: "Jewelry Photo Editing",
+    image: "/images/services/jewellery.jpg",
+    href: "/services/jewellery-editing",
+  },
+  {
+    title: "Portrait Photo Retouching",
+    image: "/images/services/portrait.jpg",
+    href: "/services/portrait-retouching",
+  },
+  {
+    title: "Body Photo Retouching",
+    image: "/images/services/body.jpg",
+    href: "/services/body-retouching",
+  },
+  {
+    title: "Newborn Photo Editing",
+    image: "/images/services/newborn.jpg",
+    href: "/services/newborn-editing",
+  },
+  {
+    title: "High-End Photo Retouching",
+    image: "/images/services/highend.jpg",
+    href: "/services/high-end-retouching",
+  },
+  {
+    title: "Wedding Photo Editing",
+    image: "/images/services/wedding.jpg",
+    href: "/services/wedding-editing",
+  },
+  {
+    title: "Creative Photo Manipulation",
+    image: "/images/services/manipulation.jpg",
+    href: "/services/photo-manipulation",
+  },
+  {
+    title: "Photo Restoration Services",
+    image: "/images/services/restoration.jpg",
+    href: "/services/photo-restoration",
+  },
+  {
+    title: "Real Estate Photo Editing",
+    image: "/images/services/realestate.jpg",
+    href: "/services/real-estate-editing",
+  },
+  {
+    title: "Professional Video Editing",
+    image: "/images/services/video.jpg",
+    href: "/services/video-editing",
+  },
 ];
 
 const ServicesDropdown = ({ onClose }: ServicesDropdownProps) => {
@@ -37,16 +85,23 @@ const ServicesDropdown = ({ onClose }: ServicesDropdownProps) => {
       {services.map((service) => (
         <Link
           href={service.href}
-          className={`${styles.serviceItem} ${pathname.startsWith(service.href) ? styles.active : ""}`}
+          className={`${styles.serviceItem} ${
+            pathname.startsWith(service.href) ? styles.active : ""
+          }`}
           key={service.title}
           onClick={onClose}
+          title={`Explore ${service.title} at Renovate Graphics`}
         >
-          <img
-            src={service.image}
-            alt={service.title}
-            className={styles.serviceImage}
-          />
-          <span className={styles.serviceTitle}>{service.title}</span>
+          <div className={styles.imageContainer}>
+            <img
+              src={service.image}
+              alt={`${service.title} example by Renovate Graphics`}
+              className={styles.serviceImage}
+            />
+            <div className={styles.titleOverlay}>
+              <span className={styles.serviceTitle}>{service.title}</span>
+            </div>
+          </div>
         </Link>
       ))}
     </div>
