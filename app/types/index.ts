@@ -9,3 +9,18 @@ export interface Service {
   beforeImage: string;
   afterImage: string;
 }
+
+export interface Slide {
+    id: number;
+    image: string;
+    mobileImage: string;
+}
+
+export interface ServiceData {
+    serviceType: string;
+    serviceTitle: string;
+    serviceDescription?: string;
+    featuresTitle?: string;
+    slides: Slide[];
+    services: Service[];
+}

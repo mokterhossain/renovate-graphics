@@ -87,7 +87,7 @@ const BeforeAfterImageSlider: React.FC<BeforeAfterSliderProps> = ({ beforeImage,
         {/* Before Image (visible on the left) */}
         <Image
           src={beforeImage}
-          alt={`Before ${title}`}
+          alt={`${title}`}
           fill
           className="object-contain"
           sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 50vw"
@@ -100,7 +100,7 @@ const BeforeAfterImageSlider: React.FC<BeforeAfterSliderProps> = ({ beforeImage,
         >
           <Image
             src={afterImage}
-            alt={`After ${title}`}
+            alt={`${title}`}
             fill
             className="object-contain"
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 50vw"

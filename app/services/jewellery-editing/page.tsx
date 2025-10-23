@@ -1,4 +1,5 @@
 import ImageSlider from "@/app/components/ImageSlider";
+import ServicePage from "../components/ServicePage";
 
 const slides = [
   { id: 1, image: "/images/slider/web/slide1.jpg", mobileImage: "/images/slider/mobile/slide1.jpg" },
@@ -16,7 +17,7 @@ const slides = [
 export default function JewelleryEditing(){
     return(
         <>
-        <ImageSlider slides={slides} />
+          <ServicePage serviceType="jewellery-editing" />
         </>
     )
 }
