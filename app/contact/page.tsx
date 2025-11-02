@@ -91,7 +91,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form + Info */}
-      <section className="max-w-6xl mx-auto px-6 md:px-20 py-0 grid md:grid-cols-2 gap-12 items-start">
+      <section className="max-w-6xl mx-auto px-6 md:px-20 py-0 grid md:grid-cols-2 gap-12 items-start mb-5">
         {/* Contact Form */}
         <motion.form
           className="bg-white rounded-2xl shadow-lg p-8 space-y-6"
@@ -188,7 +188,7 @@ export default function ContactPage() {
             </div>
             <div>
               <p className="text-gray-700 font-medium">Phone</p>
-              <p className="text-gray-600">+1 (800) 555-0199</p>
+              <p className="text-gray-600">+88 01717328462</p>
             </div>
           </div>
 
@@ -198,8 +198,19 @@ export default function ContactPage() {
             </div>
             <div>
               <p className="text-gray-700 font-medium">Address</p>
-              <p className="text-gray-600">123 Studio Lane, New York, NY 10001, USA</p>
+              <p className="text-gray-600">205/4(5th Floor)
+Begum Rokeya Sharani, West Kafrul, Dhaka, Bangladesh.</p>
             </div>
+          </div>
+          <div className="mt-10">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.9250405262524!2d90.37536441456253!3d23.785683484571997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c74a64606739%3A0x40dfc48b0835d705!2sRenovate+Graphics+Limited!5e0!3m2!1sen!2sbd!4v1485188639711"
+              width="100%"
+              height="300"
+              allowFullScreen
+              loading="lazy"
+              className="rounded-2xl shadow-md border-none"
+            ></iframe>
           </div>
         </motion.div>
       </section>
