@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import BackToTopButton from "./components/BackToTopButton";
 import Footer from "./components/Footer";
 import SmoothScrollWrapper from "./components/SmoothScrollWrapper";
+import { Toaster } from "react-hot-toast";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -106,6 +107,7 @@ export default function RootLayout({
           <Footer />
           <BackToTopButton />
         </SmoothScrollWrapper>
+        <Toaster position="top-right" reverseOrder={false} />
       </body>
     </html>
   );
