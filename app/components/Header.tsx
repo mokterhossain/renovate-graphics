@@ -16,7 +16,7 @@ export default function Header() {
   const navLinks = [
     { name: "Home", href: "/", icon: Home },
     { name: "Services", href: "/#", dropdown: true, icon: Layers },
-    { name: "Gallery", href: "/examples", icon: ImageIcon },
+    { name: "Gallery", href: "/gallery", icon: ImageIcon },
     { name: "Pricing", href: "/pricing", icon: DollarSign },
     //{ name: "Store", href: "/shop", icon: ShoppingCart },
     //{ name: "Blog", href: "/blog", icon: Book },

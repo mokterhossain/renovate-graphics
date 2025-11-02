@@ -70,11 +70,11 @@ const services: ServiceItem[] = [
     image: "/images/services/realestate.jpg",
     href: "/services/real-estate-editing",
   },
-  {
+  /* {
     title: "Professional Video Editing",
     image: "/images/services/video.jpg",
     href: "/services/video-editing",
-  },
+  }, */
 ];
 
 const ServicesDropdown = ({ onClose }: ServicesDropdownProps) => {

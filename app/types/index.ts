@@ -24,3 +24,17 @@ export interface ServiceData {
     slides: Slide[];
     services: Service[];
 }
+
+export interface RetouchImage {
+  id: number;
+  thumbnail: string;
+  before: string;
+  after: string;
+  description: string;
+}
+
+export interface GalleryData {
+  id: string;
+  name: string;
+  images: RetouchImage[];
+}

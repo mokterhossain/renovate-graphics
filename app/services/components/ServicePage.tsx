@@ -27,7 +27,7 @@ const ServicePage: React.FC<ServicePageProps> = ({ serviceType }: ServicePagePro
           </p>
         </div>
       </section>
-      <section id="services" className="bg-gray-50">
+      <section id="services" className="bg-gray-50 mb-10">
         <div className="container mx-auto px-6">
           <h2 className="text-2xl text-center text-gray-900 mb-10">
             {serviceData.featuresTitle}
