@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 
- 
+ console.log("RESEND_API_KEY present?", !!process.env.RESEND_API_KEY); // ✅ add this line
 
 export async function POST(req: Request) {
   try {
