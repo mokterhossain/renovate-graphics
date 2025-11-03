@@ -1,4 +1,6 @@
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   try {
@@ -8,17 +10,7 @@ export async function POST(req: Request) {
     const message = formData.get("message") as string;
     const file = formData.get("file") as File | null;
 
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: Number(process.env.SMTP_PORT),
-      secure: Number(process.env.SMTP_PORT) === 465,
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-      },
-    });
-
-    // 📨 Email that goes to your inbox (Admin)
+    // --- Build HTML Templates ---
     const adminHtml = `
     <div style="font-family:Arial,Helvetica,sans-serif;background-color:#f8fafc;padding:20px;">
       <div style="max-width:600px;margin:auto;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
@@ -39,10 +31,8 @@ export async function POST(req: Request) {
           © ${new Date().getFullYear()} Renovate Graphics
         </div>
       </div>
-    </div>
-    `;
+    </div>`;
 
-    // 📨 Confirmation email to the user
     const userHtml = `
     <div style="font-family:Arial,Helvetica,sans-serif;background-color:#f8fafc;padding:20px;">
       <div style="max-width:600px;margin:auto;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
@@ -69,39 +59,36 @@ export async function POST(req: Request) {
           © ${new Date().getFullYear()} Renovate Graphics. All rights reserved.
         </div>
       </div>
-    </div>
-    `;
+    </div>`;
 
-    // Prepare attachment if uploaded
-    let attachments = [];
-    if (file) {
-      const arrayBuffer = await file.arrayBuffer();
-      attachments.push({
-        filename: file.name,
-        content: Buffer.from(arrayBuffer),
-      });
-    }
+    // --- Handle optional file attachment ---
+    const attachments = file
+      ? [
+          {
+            filename: file.name,
+            content: Buffer.from(await file.arrayBuffer()).toString("base64"),
+          },
+        ]
+      : [];
 
-    // Send admin email
-    await transporter.sendMail({
-      from: `"Renovate Graphics" <${process.env.SMTP_USER}>`,
-      to: process.env.SMTP_USER,
+    // --- Send to admin (yourself) ---
+    await resend.emails.send({
+      from: "Renovate Graphics <noreply@renovategraphics.com>",
+      to: process.env.SMTP_USER!,
       subject: `New message from ${name}`,
       html: adminHtml,
       attachments,
     });
 
-    // Send confirmation to user
-    await transporter.sendMail({
-      from: `"Renovate Graphics" <${process.env.SMTP_USER}>`,
+    // --- Send confirmation to user ---
+    await resend.emails.send({
+      from: "Renovate Graphics <noreply@renovategraphics.com>",
       to: email,
-      subject: `Thank you for contacting Renovate Graphics`,
+      subject: "Thank you for contacting Renovate Graphics",
       html: userHtml,
     });
 
-    // ✅ Return confirmation message
     return Response.json({ success: true, message: "Email sent successfully" });
-
   } catch (error: any) {
     console.error("Email send error:", error);
     return Response.json({ success: false, error: error.message }, { status: 500 });
