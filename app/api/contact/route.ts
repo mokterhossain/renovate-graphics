@@ -5,11 +5,11 @@ import { Resend } from "resend";
 export async function POST(req: Request) {
   try {
 
-    if (!process.env.RESEND_API_KEY) {
-  console.error("❌ RESEND_API_KEY is missing");
-}
+      if (!process.env.RESEND_API_KEY) {
+          console.error("❌ RESEND_API_KEY is missing");
+      }
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+      const resend = new Resend(process.env.RESEND_API_KEY);
    
     const formData = await req.formData();
     const name = formData.get("name") as string;
