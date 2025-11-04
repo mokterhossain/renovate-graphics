@@ -49,7 +49,7 @@ export default function ImageModal({ image, onClose }: ImageModalProps) {
             {/* Before Image */}
             <div>
               <p className="text-lg font-semibold text-center text-red-600 mb-2">Before</p>
-                          <div className="rounded-lg overflow-hidden border border-gray-200">
+                          <div className="w-full rounded-lg overflow-hidden border border-gray-200">
                               <BeforeAfterImageSlider
           beforeImage={image.before}
           afterImage={image.after}

@@ -34,5 +34,18 @@ export const galleryData: GalleryData[] = [
       },
     ],
   },
+  {
+    id: 'color-correction',
+    name: 'Color Correction',
+    images: [
+      {
+        id: 3,
+        thumbnail: '/images/gallery/furniture-color-change-after.jpg',
+        before: '/images/gallery/furniture-color-change-before.jpg',
+        after: '/images/gallery/furniture-color-change-after.jpg',
+        description: 'High-end beauty and skin retouching',
+      },
+    ],
+  },
   // ... (other services)
 ];
