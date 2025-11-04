@@ -10,6 +10,7 @@ const slides = [
   { id: 4, image: "/images/slider/web/product-image-composition-service.jpg", mobileImage: "/images/slider/mobile/product-image-composition-service.jpg" },
   { id: 5, image: "/images/slider/web/product-image-retouching-service.jpg", mobileImage: "/images/slider/mobile/product-image-retouching-service.jpg" },  
   { id: 6, image: "/images/slider/web/ai-image-enhancement-service.jpg", mobileImage: "/images/slider/mobile/ai-image-enhancement-service.jpg" },
+  { id: 7, image: "/images/slider/web/real-estate-photo-retouching.jpg", mobileImage: "/images/slider/mobile/real-estate-photo-retouching.jpg" },
   /* { id: 4, image: "/images/slider/web/slide2.jpg", mobileImage: "/images/slider/mobile/slide2.jpg" },
   { id: 5, image: "/images/slider/web/slide3.jpg", mobileImage: "/images/slider/mobile/slide3.jpg" },  
   { id: 6, image: "/images/slider/web/slide5.jpg", mobileImage: "/images/slider/mobile/slide5.jpg" },
