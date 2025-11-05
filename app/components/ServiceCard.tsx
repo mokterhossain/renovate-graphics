@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 import Button from "./Button";
 import { Service } from "../types";
+import BeforeAfterImageSlider from "./BeforeAfterImageSlider";
 
 interface ServiceCardProps {
   service: Service;
@@ -45,11 +46,17 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
 </div>
       </div>
       <div className="flex-1 lg:w-1/2">
-      <BeforeAfterSlider
+       <BeforeAfterImageSlider
+          beforeImage={service.beforeImage}
+          afterImage={service.afterImage}
+          title={service.title}
+        />
+      {/* <BeforeAfterSlider
         beforeImage={service.beforeImage}
         afterImage={service.afterImage}
         title={service.title}
-      /></div>
+      /> */}
+      </div>
     </div>
   );
 };

@@ -18,8 +18,8 @@ const services: Service[] = [
       "High-resolution, print-ready output",
     ],
     cta: "",
-    beforeImage: "/images/retouching-before.jpg",
-    afterImage: "/images/retouching-after.jpg",
+    beforeImage: "/images/portrait-retouch-6-before.jpg",
+    afterImage: "/images/portrait-retouch-6-after.jpg",
   },
   {
     id: 2,
@@ -37,8 +37,8 @@ const services: Service[] = [
     ],
     cta: "Capture every special moment beautifully with our expert editing services.",
 
-    beforeImage: "/images/background-before.jpg",
-    afterImage: "/images/background-after.jpg",
+    beforeImage: "/images/portrait-retouch-3-before.jpg",
+    afterImage: "/images/portrait-retouch-3-after.jpg",
   },
   {
     id: 3,
@@ -56,8 +56,8 @@ const services: Service[] = [
     "Clipping path creation for accurate product outlines",
   ],
   cta: "Make your products stand out and boost your sales with our professional photo editing services.",
-    beforeImage: "/images/color-before.jpg",
-    afterImage: "/images/color-after.jpg",
+    beforeImage: "/images/portrait-retouch-7-before.jpg",
+    afterImage: "/images/portrait-retouch-7-after.jpg",
   },
   {
     id: 4,
