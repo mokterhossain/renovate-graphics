@@ -23,6 +23,25 @@ const services: Service[] = [
   },
   {
     id: 2,
+  title: "Product Photo Editing",
+  price: "$2.50 per photo",
+  description:
+    "Showcase your products at their best and attract more customers. Our experts skillfully enhance your product and eCommerce photos, making them catalog-ready, Amazon-ready, or perfect for any online store.",
+  featuresTitle: "Our product photo editing services include:",
+  features: [
+    "Background removal or replacement for a clean, professional look",
+    "Precise color correction to make your products pop",
+    "Shadow removal and adjustment for perfect lighting",
+    "Ghost mannequin editing for apparel and wearable products",
+    "Noise reduction for crisp, high-quality images",
+    "Clipping path creation for accurate product outlines",
+  ],
+  cta: "Make your products stand out and boost your sales with our professional photo editing services.",
+    beforeImage: "/images/services/ghost-mannequin-editng-service/ghost-mannequin-editing-service-before.jpg",
+    afterImage: "/images/services/ghost-mannequin-editng-service/ghost-mannequin-editing-service-after.jpg",
+  },
+  {
+    id: 3,
     title: "Wedding Photo Editing",
     price: "$0.25 per photo",
     description:
@@ -40,25 +59,7 @@ const services: Service[] = [
     beforeImage: "/images/portrait-retouch-3-before.jpg",
     afterImage: "/images/portrait-retouch-3-after.jpg",
   },
-  {
-    id: 3,
-  title: "Product Photo Editing",
-  price: "$2.50 per photo",
-  description:
-    "Showcase your products at their best and attract more customers. Our experts skillfully enhance your product and eCommerce photos, making them catalog-ready, Amazon-ready, or perfect for any online store.",
-  featuresTitle: "Our product photo editing services include:",
-  features: [
-    "Background removal or replacement for a clean, professional look",
-    "Precise color correction to make your products pop",
-    "Shadow removal and adjustment for perfect lighting",
-    "Ghost mannequin editing for apparel and wearable products",
-    "Noise reduction for crisp, high-quality images",
-    "Clipping path creation for accurate product outlines",
-  ],
-  cta: "Make your products stand out and boost your sales with our professional photo editing services.",
-    beforeImage: "/images/portrait-retouch-7-before.jpg",
-    afterImage: "/images/portrait-retouch-7-after.jpg",
-  },
+  
   {
     id: 4,
   title: "Jewelry Photo Editing",

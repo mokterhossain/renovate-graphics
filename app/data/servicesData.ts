@@ -105,7 +105,8 @@ export const servicesData: ServiceData[] = [
         serviceDescription: "Stop losing customers to blurry, inconsistent images. Renovate Graphics provides tailored e-commerce photo editing services that ensure your product listings are compliant, visually stunning, and optimized for maximum sales across platforms like Amazon, eBay, and Shopify.",
         featuresTitle: "E-commerce Product Photo Editing We Provide",
         slides: [
-            { id: 1, image: "/images/slider/web/slide1.jpg", mobileImage: "/images/slider/mobile/slide1.jpg" },
+            { id: 1, image: "/images/services/ghost-mannequin-editng-service/ghost-mannequin-editing-service-banner-1.jpg", mobileImage: "/images/services/ghost-mannequin-editng-service/ghost-mannequin-editing-service-banner-1.jpg" },
+            { id: 2, image: "/images/services/ghost-mannequin-editng-service/ghost-mannequin-editing-service-banner-2.jpg", mobileImage: "/images/services/ghost-mannequin-editng-service/ghost-mannequin-editing-service-banner-2.jpg" },
         ],
         services: [
             {
@@ -127,8 +128,8 @@ export const servicesData: ServiceData[] = [
                 featuresTitle: "",
                 features: [],
                 cta: "",
-                beforeImage: "/images/background-before.jpg",
-                afterImage: "/images/background-after.jpg",
+                beforeImage: "/images/services/ghost-mannequin-editng-service/ghost-mannequin-editing-service-before.jpg",
+                afterImage: "/images/services/ghost-mannequin-editng-service/ghost-mannequin-editing-service-after.jpg",
             }
             ,
             {
