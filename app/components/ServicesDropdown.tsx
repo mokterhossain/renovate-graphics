@@ -17,22 +17,22 @@ interface ServicesDropdownProps {
 const services: ServiceItem[] = [
   {
     title: "Clipping Path Editing",
-    image: "/images/services/clipping.jpg",
+    image: "/images/services/clipping-path-2.jpg",
     href: "/services/clipping-path",
   },
   {
     title: "E-commerce Photo Editing",
-    image: "/images/services/product.jpg",
+    image: "/images/services/ghost-mennequin-service.jpg",
     href: "/services/product-editing",
   },
   {
     title: "Jewelry Photo Editing",
-    image: "/images/services/jewellery.jpg",
+    image: "/images/services/Jewelry-Retouching-Service-3.jpg",
     href: "/services/jewellery-editing",
   },
   {
     title: "Portrait Photo Retouching",
-    image: "/images/services/portrait.jpg",
+    image: "/images/services/portrait-retouch-8-after.jpg",
     href: "/services/portrait-retouching",
   },
   {
@@ -47,7 +47,7 @@ const services: ServiceItem[] = [
   },
   {
     title: "High-End Photo Retouching",
-    image: "/images/services/highend.jpg",
+    image: "/images/services/high-end-retouch-9-after.jpg",
     href: "/services/high-end-retouching",
   },
   {

@@ -7,7 +7,7 @@ export const servicesData: ServiceData[] = [
         serviceDescription: "At Renovate Graphics, we specialize in delivering top-notch clipping path services that ensure your images stand out with impeccable precision. Our expert team utilizes advanced techniques to create clean and accurate paths, allowing for seamless background removal and image isolation. Whether you're a photographer, eCommerce brand, or studio, our clipping path solutions are tailored to meet your specific needs, enhancing the visual appeal of your products and photographs. Trust us to provide high-quality results that elevate your imagery to the next level.",
         featuresTitle: "Clipping Path Service Features",
         slides: [
-            { id: 1, image: "/images/slider/web/slide1.jpg", mobileImage: "/images/slider/mobile/slide1.jpg" },
+            { id: 1, image: "/images/slider/web/clipping-path-service.png", mobileImage: "/images/slider/mobile/clipping-path-service.png" },
             { id: 2, image: "/images/slider/web/slide2.jpg", mobileImage: "/images/slider/mobile/slide2.jpg" },
             { id: 3, image: "/images/slider/web/slide3.jpg", mobileImage: "/images/slider/mobile/slide3.jpg" },
             { id: 4, image: "/images/slider/web/slide4.jpg", mobileImage: "/images/slider/mobile/slide4.jpg" },
@@ -317,7 +317,11 @@ export const servicesData: ServiceData[] = [
         serviceDescription: "Get natural, high-end portrait retouching for headshots, portfolios, and marketing. We specialize in expert skin smoothing, beauty enhancements, and realistic model retouching. Our hand-retouched portraits maintain authentic texture while enhancing features for stunning results.",
         featuresTitle: "Portrait Retouching Service Features",
         slides: [
-            { id: 1, image: "/images/slider/web/slide1.jpg", mobileImage: "/images/slider/mobile/slide1.jpg" },
+            { id: 2, image: "/images/slider/web/professional-portrair-retouching-4.jpg", mobileImage: "/images/slider/mobile/professional-portrair-retouching-4.jpg" },
+  { id: 3, image: "/images/slider/web/high-end-photo-retouching-service.jpg", mobileImage: "/images/slider/mobile/high-end-photo-retouching-service.jpg" },
+  { id: 4, image: "/images/slider/web/professional-portrair-retouching-3.jpg", mobileImage: "/images/slider/mobile/professional-portrair-retouching-3.jpg" },
+  { id: 5, image: "/images/slider/web/professional-portrair-retouching-2.jpg", mobileImage: "/images/slider/mobile/professional-portrair-retouching-2.jpg" },
+  { id: 6, image: "/images/slider/web/professional-portrair-retouching.jpg", mobileImage: "/images/slider/mobile/professional-portrair-retouching.jpg" },
         ],
         services: [
             {
@@ -549,7 +553,7 @@ export const servicesData: ServiceData[] = [
         serviceDescription: "Get magazine-quality results with expert High-End Retouching. We provide advanced skin smoothing, Dodge & Burn, and precise compositing for flawless fashion and beauty photography. Our hand-retouched images maintain authentic texture while delivering stunning, editorial-quality visuals.",
         featuresTitle: "High-End Photo Retouching Service Features",
         slides: [
-            { id: 1, image: "/images/slider/web/slide1.jpg", mobileImage: "/images/slider/mobile/slide1.jpg" },
+            { id: 1, image: "/images/slider/web/high-end-photo-retouching-service-2.jpg", mobileImage: "/images/slider/mobile/high-end-photo-retouching-service-2.jpg" },
         ],
         services: [
             {
@@ -560,8 +564,8 @@ export const servicesData: ServiceData[] = [
                 featuresTitle: "",
                 features: [],
                 cta: "",
-                beforeImage: "/images/retouching-before.jpg",
-                afterImage: "/images/retouching-after.jpg",
+                beforeImage: "/images/services/high-end-retouch-before.jpg",
+                afterImage: "/images/services/high-end-retouch-after.jpg",
             },
             {
                 id: 2,
@@ -571,10 +575,10 @@ export const servicesData: ServiceData[] = [
                 featuresTitle: "",  
                 features: [],
                 cta: "",
-                beforeImage: "/images/background-before.jpg",
-                afterImage: "/images/background-after.jpg",
+                beforeImage: "/images/services/high-end-retouch-before.jpg",
+                afterImage: "/images/services/high-end-retouch-after.jpg",
             },
-            {
+            /* {
                 id: 3,
                 title: "Professional Photo Compositing & Manipulation Services",
                 price: "$5.00 per image",
@@ -584,7 +588,7 @@ export const servicesData: ServiceData[] = [
                 cta: "",
                 beforeImage: "/images/color-before.jpg",
                 afterImage: "/images/color-after.jpg",
-            },
+            }, */
             {
                 id: 4,
                 title: "High-End Beauty Retouching Services",
@@ -593,8 +597,8 @@ export const servicesData: ServiceData[] = [
                 featuresTitle: "",
                 features: [],
                 cta: "",
-                beforeImage: "/images/restoration-before.jpg",
-                afterImage: "/images/restoration-after.jpg",
+                beforeImage: "/images/services/high-end-retouch-before.jpg",
+                afterImage: "/images/services/high-end-retouch-after.jpg",
             }
         ]
     },

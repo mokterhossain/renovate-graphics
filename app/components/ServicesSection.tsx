@@ -40,7 +40,7 @@ const services: Service[] = [
     beforeImage: "/images/services/ghost-mannequin-editng-service/ghost-mannequin-editing-service-before.jpg",
     afterImage: "/images/services/ghost-mannequin-editng-service/ghost-mannequin-editing-service-after.jpg",
   },
-  {
+  /* {
     id: 3,
     title: "Wedding Photo Editing",
     price: "$0.25 per photo",
@@ -58,7 +58,7 @@ const services: Service[] = [
 
     beforeImage: "/images/portrait-retouch-3-before.jpg",
     afterImage: "/images/portrait-retouch-3-after.jpg",
-  },
+  }, */
   
   {
     id: 4,
@@ -75,10 +75,10 @@ const services: Service[] = [
     "Smoothing metal surfaces for a flawless finish",
   ],
   cta: "Showcase your jewelry in its best light and attract more customers with our professional editing services.",
-    beforeImage: "/images/restoration-before.jpg",
-    afterImage: "/images/restoration-after.jpg",
+    beforeImage: "/images/jewelry-retouch-before.jpg",
+    afterImage: "/images/jewelry-retouch-after.jpg",
   },
-  {
+  /* {
   id: 5,
   title: "Creative Photo Manipulation",
   price: "$30 per image",
@@ -95,7 +95,7 @@ const services: Service[] = [
   cta: "Bring your ideas to life and make your images stand out with our expert photo manipulation services.",
   beforeImage: "/images/restoration-before.jpg",
     afterImage: "/images/restoration-after.jpg",
-},
+}, */
 {
   id: 6,
   title: "Real Estate Photo Editing",
