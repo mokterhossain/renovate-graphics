@@ -8,8 +8,8 @@ export const servicesData: ServiceData[] = [
         featuresTitle: "Clipping Path Service Features",
         slides: [
             { id: 1, image: "/images/slider/web/clipping-path-service.png", mobileImage: "/images/slider/mobile/clipping-path-service.png" },
-            { id: 2, image: "/images/slider/web/slide2.jpg", mobileImage: "/images/slider/mobile/slide2.jpg" },
-            { id: 3, image: "/images/slider/web/slide3.jpg", mobileImage: "/images/slider/mobile/slide3.jpg" },
+            { id: 2, image: "/images/slider/web/clipping-path-service.jpg", mobileImage: "/images/slider/mobile/clipping-path-service.jpg" },
+            /* { id: 3, image: "/images/slider/web/slide3.jpg", mobileImage: "/images/slider/mobile/slide3.jpg" },
             { id: 4, image: "/images/slider/web/slide4.jpg", mobileImage: "/images/slider/mobile/slide4.jpg" },
             { id: 5, image: "/images/slider/web/slide5.jpg", mobileImage: "/images/slider/mobile/slide5.jpg" },
             { id: 6, image: "/images/slider/web/slide6.jpg", mobileImage: "/images/slider/mobile/slide6.jpg" },
@@ -17,7 +17,7 @@ export const servicesData: ServiceData[] = [
             { id: 8, image: "/images/slider/web/slide8.jpg", mobileImage: "/images/slider/mobile/slide8.jpg" },
             { id: 9, image: "/images/slider/web/slide9.jpg", mobileImage: "/images/slider/mobile/slide9.jpg" },
             { id: 10, image: "/images/slider/web/slide10.jpg", mobileImage: "/images/slider/mobile/slide10.jpg" },
-            { id: 11, image: "/images/slider/web/slide11.jpg", mobileImage: "/images/slider/mobile/slide11.jpg" },
+            { id: 11, image: "/images/slider/web/slide11.jpg", mobileImage: "/images/slider/mobile/slide11.jpg" }, */
         ],
         services: [
             {
@@ -28,8 +28,8 @@ export const servicesData: ServiceData[] = [
                 featuresTitle: "",
                 features: [],
                 cta: "",
-                beforeImage: "/images/retouching-before.jpg",
-                afterImage: "/images/retouching-after.jpg",
+                beforeImage: "/images/services/clipping-path/clipping-path-service-3-before.jpg",
+                afterImage: "/images/services/clipping-path/clipping-path-service-3-after.jpg",
             },
             {
                 id: 2,
@@ -39,8 +39,8 @@ export const servicesData: ServiceData[] = [
                 featuresTitle: "",
                 features: [],
                 cta: "",
-                beforeImage: "/images/background-before.jpg",
-                afterImage: "/images/background-after.jpg",
+                beforeImage: "/images/services/clipping-path/clipping-path-service-4-before.jpg",
+                afterImage: "/images/services/clipping-path/clipping-path-service-4-after.jpg",
             },
             {
                 id: 3,
@@ -50,8 +50,8 @@ export const servicesData: ServiceData[] = [
                 featuresTitle: "",
                 features: [],
                 cta: "",
-                beforeImage: "/images/color-before.jpg",
-                afterImage: "/images/color-after.jpg",
+                beforeImage: "/images/services/clipping-path/clipping-path-service-shadow-before.jpg",
+                afterImage: "/images/services/clipping-path/clipping-path-service-shadow-after.jpg",
             },
             {
                 id: 4,
@@ -61,8 +61,8 @@ export const servicesData: ServiceData[] = [
                 featuresTitle: "",
                 features: [],
                 cta: "",
-                beforeImage: "/images/restoration-before.jpg",
-                afterImage: "/images/restoration-after.jpg",
+                beforeImage: "/images/services/clipping-path/ghost-mannequin-before.jpg",
+                afterImage: "/images/services/clipping-path/ghost-mannequin-after.jpg",
             },
             {
                 id: 5,
@@ -72,10 +72,10 @@ export const servicesData: ServiceData[] = [
                 featuresTitle: "",
                 features: [],
                 cta: "",
-                beforeImage: "/images/restoration-before.jpg",
-                afterImage: "/images/restoration-after.jpg",
+                beforeImage: "/images/services/clipping-path/background-removal-before.jpg",
+                afterImage: "/images/services/clipping-path/background-removal-after.jpg",
             },
-            {
+            /* {
                 id: 6,
                 title: "Color Matching Services Starting at $1.50 per Photo",
                 price: "$1.50 per photo",
@@ -96,7 +96,7 @@ export const servicesData: ServiceData[] = [
                 cta: "",
                 beforeImage: "/images/ai-image-enhance-before.jpg",
                 afterImage: "/images/ai-image-enhance-after.jpg",
-            },
+            }, */
         ]
     },
     {
@@ -117,8 +117,8 @@ export const servicesData: ServiceData[] = [
                 featuresTitle: "",
                 features: [],
                 cta: "",
-                beforeImage: "/images/retouching-before.jpg",
-                afterImage: "/images/retouching-after.jpg",
+                beforeImage: "/images/services/ghost-mannequin-editng-service/image-cleaning-before.jpg",
+                afterImage: "/images/services/ghost-mannequin-editng-service/image-cleaning-after.jpg",
             },
             {
                 id: 2,
@@ -140,8 +140,8 @@ export const servicesData: ServiceData[] = [
                 featuresTitle: "",
                 features: [],
                 cta: "",
-                beforeImage: "/images/background-before.jpg",
-                afterImage: "/images/background-after.jpg",
+                beforeImage: "/images/services/ghost-mannequin-editng-service/orginal-shadow-before.jpg",
+                afterImage: "/images/services/ghost-mannequin-editng-service/orginal-shadow-after.jpg",
             },
             {
                 id: 4,
@@ -151,8 +151,8 @@ export const servicesData: ServiceData[] = [
                 featuresTitle: "",
                 features: [],   
                 cta: "",
-                beforeImage: "/images/color-before.jpg",
-                afterImage: "/images/color-after.jpg",
+                beforeImage: "/images/services/ghost-mannequin-editng-service/color-change-before.jpg",
+                afterImage: "/images/services/ghost-mannequin-editng-service/color-change-after.jpg",
             },
             {
                 id: 5,
@@ -195,8 +195,8 @@ export const servicesData: ServiceData[] = [
                 featuresTitle: "",
                 features: [],
                 cta: "",
-                beforeImage: "/images/retouching-before.jpg",
-                afterImage: "/images/retouching-after.jpg",
+                beforeImage: "/images/services/Background-remove.gif",
+                afterImage: "/images/services/Background-remove.gif",
             },
             {
                 id: 9,
@@ -209,7 +209,7 @@ export const servicesData: ServiceData[] = [
                 beforeImage: "/images/ai-image-enhance-before.jpg",
                 afterImage: "/images/ai-image-enhance-after.jpg",
             },
-            {
+            /* {
                 id: 10,
                 title: "Creative Photo Manipulation & Advanced Product Compositing Services",
                 price: "$5.00 per photo",
@@ -230,7 +230,7 @@ export const servicesData: ServiceData[] = [
                 cta: "",
                 beforeImage: "/images/ai-image-enhance-before.jpg",
                 afterImage: "/images/ai-image-enhance-after.jpg",
-            }
+            } */
             
         ]
     },
@@ -240,7 +240,7 @@ export const servicesData: ServiceData[] = [
         serviceDescription: "Get stunning, high-end Jewelry Editing Services for luxury e-commerce. We specialize in metal polishing, diamond enhancement, and flawless glare and dust removal. Our expert retouchers ensure every piece sparkles, making your jewelry irresistible to buyers.",
         featuresTitle: "Jewelry Editing Service Features",
         slides: [
-            { id: 1, image: "/images/slider/web/slide1.jpg", mobileImage: "/images/slider/mobile/slide1.jpg" },
+            { id: 1, image: "/images/slider/web/jewellery-image-retouching.jpg", mobileImage: "/images/slider/mobile/jewellery-image-retouching.jpg" },
         ],
         services: [
             {
@@ -317,6 +317,7 @@ export const servicesData: ServiceData[] = [
         serviceDescription: "Get natural, high-end portrait retouching for headshots, portfolios, and marketing. We specialize in expert skin smoothing, beauty enhancements, and realistic model retouching. Our hand-retouched portraits maintain authentic texture while enhancing features for stunning results.",
         featuresTitle: "Portrait Retouching Service Features",
         slides: [
+            
             { id: 2, image: "/images/slider/web/professional-portrair-retouching-4.jpg", mobileImage: "/images/slider/mobile/professional-portrair-retouching-4.jpg" },
   { id: 3, image: "/images/slider/web/high-end-photo-retouching-service.jpg", mobileImage: "/images/slider/mobile/high-end-photo-retouching-service.jpg" },
   { id: 4, image: "/images/slider/web/professional-portrair-retouching-3.jpg", mobileImage: "/images/slider/mobile/professional-portrair-retouching-3.jpg" },
@@ -401,7 +402,7 @@ export const servicesData: ServiceData[] = [
                 beforeImage: "/images/ai-image-enhance-before.jpg",
                 afterImage: "/images/ai-image-enhance-after.jpg",
             },
-            {
+            /* {
                 id: 8,
                 title: "Color Grading & Tone Mapping Services",
                 price: "$2.00 per image",
@@ -411,7 +412,7 @@ export const servicesData: ServiceData[] = [
                 cta: "",
                 beforeImage: "/images/photo-manipulation-before.jpg",
                 afterImage: "/images/photo-manipulation-after.jpg",
-            }
+            } */
         ]
     },
     {
@@ -553,7 +554,8 @@ export const servicesData: ServiceData[] = [
         serviceDescription: "Get magazine-quality results with expert High-End Retouching. We provide advanced skin smoothing, Dodge & Burn, and precise compositing for flawless fashion and beauty photography. Our hand-retouched images maintain authentic texture while delivering stunning, editorial-quality visuals.",
         featuresTitle: "High-End Photo Retouching Service Features",
         slides: [
-            { id: 1, image: "/images/slider/web/high-end-photo-retouching-service-2.jpg", mobileImage: "/images/slider/mobile/high-end-photo-retouching-service-2.jpg" },
+            { id: 1, image: "/images/slider/web/glamour-retouch.jpg", mobileImage: "/images/slider/mobile/glamour-retouch.jpg" },
+            { id: 2, image: "/images/slider/web/high-end-photo-retouching-service-2.jpg", mobileImage: "/images/slider/mobile/high-end-photo-retouching-service-2.jpg" },
         ],
         services: [
             {
@@ -575,8 +577,8 @@ export const servicesData: ServiceData[] = [
                 featuresTitle: "",  
                 features: [],
                 cta: "",
-                beforeImage: "/images/services/high-end-retouch-before.jpg",
-                afterImage: "/images/services/high-end-retouch-after.jpg",
+                beforeImage: "/images/services/high-end-glamour-retouch-before.jpg",
+                afterImage: "/images/services/high-end-glamour-retouch-after.jpg",
             },
             /* {
                 id: 3,
